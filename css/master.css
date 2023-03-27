@@ -8,6 +8,7 @@
 
     --Light-Grayish-Blue: hsl(240, 75%, 98%);
     --Light-Gray: hsl(0, 0%, 75%);
+    --mainpad: 30px
 }
 body { 
     margin: 0;
@@ -15,15 +16,13 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 .container { 
-    /* width: 600px; */
-    background-color: red;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-.parent { 
-    background-color: yellow;
+a { 
+    text-decoration: none;
 }
 @media (min-width: 790px) { 
     .container { 
@@ -38,5 +37,126 @@ body {
 @media (min-width: 1200px) { 
     .container { 
         width: 1170px;
+    }
+}
+header { 
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+header .container { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container img {
+    max-width: 120px;
+}
+header .container nav {
+    padding: 10px;
+}
+header .container nav a {
+    padding-left: 20px;
+    color: var(--Very-Dark-Blue);
+}
+@media (max-width: 676px) { 
+    header .container nav a { 
+        padding: 5px;
+        margin-right: -5px;
+    }
+}
+header .container nav a:hover{ 
+    color: var(--Desaturated-Blue);
+}
+main .container { 
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 676px) { 
+    main .container { 
+        flex-direction: column-reverse;
+    }
+}
+main {
+    padding-top: var(--mainpad);
+    padding-bottom: var(--mainpad);
+}
+main .container img { 
+    max-width: 50%;
+}
+main .container .info { 
+    padding: 10px;
+}
+main .container .info h1 { 
+    font-weight: 700;
+    font-size: 38px;
+}
+main .container .info p { 
+    font-size: 17px;
+}
+@media (max-width: 676px) { 
+    main .container .info {
+        text-align: center;
+    }
+    main .container .info h1 {
+        font-size: 25px;
+    }
+}
+main .container .info form { 
+    padding: 20 5px;
+    display: flex;
+    position: relative;
+}
+main .container .info form input { 
+    width: 50%;
+    padding: 15px;
+    border-radius: 3px;
+    
+}
+main .container .info form input::placeholder { 
+    padding-left: 7px;
+}
+main .container .info form input:focus {
+    border: 2px solid rgba(255, 0, 0, 0.392);
+    outline: none;
+}
+main .container .info form input:focus::placeholder { 
+    color: rgba(255, 0, 0, 0.392);
+    opacity: 0.7;
+}
+main .container .info form p.check{ 
+    position: absolute;
+    color: rgba(255, 0, 0, 0.619);
+    left: 0;
+    bottom: 0px;
+    z-index: -1;
+    transition: 0.2s;
+}
+main .container .info input:focus-within + p.check { 
+    bottom: -45px;
+}
+main .container .info form a {
+    margin-left: 10px;
+    background-color: var(--Bright-Blue);
+    padding: 15px 60px;
+    color: white;
+    font-weight: 400;
+    border-radius: 3px;
+}
+main .container .info form a:hover { 
+    background-color: hsla(224, 93%, 58%, 0.8);
+}
+@media (max-width: 676px) { 
+    main .container .info form { 
+        flex-direction: column;
+        padding: 0;
+    }
+    main .container .info form input { 
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px 0;
+    }
+    main .container .info form a {
+        margin-left: 0px;
+        padding: 15px 0;
     }
 }
