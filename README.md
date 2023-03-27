@@ -1,6 +1,6 @@
 # Frontend Mentor - Fylo landing page with two column layout
 
-### Live Site URL: [https://helalabood.github.io/Fm-11-huddle-landing-page/](https://helalabood.github.io/Fm-11-huddle-landing-page/)
+### Live Site URL: [https://helalabood.github.io/Fm-12-fylo-landing-page-master/](https://helalabood.github.io/Fm-12-fylo-landing-page-master/)
 
 
 
