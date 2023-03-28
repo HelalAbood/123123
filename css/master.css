@@ -166,11 +166,9 @@ main .container .info form a:hover {
 }
 
 main .container.botter { 
-    padding-top: calc(var(--mainpad) + 60px);
-    padding-bottom: var(--mainpad);
+    padding-top: calc(var(--mainpad) + 140px);
+    padding-bottom: calc(var(--mainpad) + 100px);
 }
-
-
 
 main .container.botter h1 { 
     font-size: 33px;
@@ -323,4 +321,8 @@ main section form a {
         width: 100%;
         padding: 10px 0px;
     }
+}
+footer { 
+    background-color: var(--Very-Dark-Blue);
+    color: white;
 }
