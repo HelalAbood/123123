@@ -323,6 +323,41 @@ main section form a {
     }
 }
 footer { 
+    padding-top: calc(var(--mainpad) + 40px);
+    padding-bottom: calc(var(--mainpad) + 40px);
     background-color: var(--Very-Dark-Blue);
     color: white;
+}
+footer .container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .container .section { 
+    display: flex;
+    flex-direction: column;
+}
+footer .container .section img { 
+    filter: brightness(0) invert(1);
+    margin-top: 10px;
+    margin-right: 20px;
+}
+footer .container .section span { 
+    padding: 10px 0px;
+    font-family: 'Open Sans', sans-serif;;
+}
+footer .container .sec ul li { 
+    list-style: none;
+    padding-bottom: 15px;
+    
+}
+footer .container .sec ul li a { 
+    color: white;
+}
+footer .container .sec i {
+    margin-left: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 20px 10px;
+    cursor: pointer;
 }
