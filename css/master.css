@@ -78,7 +78,6 @@ main .container {
 }
 main {
     padding-top: var(--mainpad);
-    padding-bottom: var(--mainpad);
 }
 main .container img { 
     max-width: 50%;
@@ -337,6 +336,16 @@ footer .container .section {
     display: flex;
     flex-direction: column;
 }
+@media (max-width: 676px) { 
+    footer .container .section { 
+        padding-left: 40px;
+    }
+}
+@media (max-width: 676px) { 
+    footer .container { 
+        align-items: flex-start;
+    }
+}
 footer .container .section img { 
     filter: brightness(0) invert(1);
     margin-top: 10px;
@@ -360,4 +369,15 @@ footer .container .sec i {
     border-radius: 50%;
     padding: 20px 10px;
     cursor: pointer;
+}
+@media (max-width: 676px) { 
+    footer .container.no-reverse { 
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 676px) { 
+    footer .container .sec.ico { 
+        margin: 0 auto;
+    }
 }
