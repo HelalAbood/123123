@@ -34,6 +34,7 @@ This is a solution to the [Fylo landing page with two column layout](https://www
 ### Built with
 
 - Semantic HTML5 markup
+- FontAwesome
 - CSS custom properties
 - BootStrap 3
 - Flexbox
